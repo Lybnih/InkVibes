@@ -1,0 +1,208 @@
+/*Estilização geral do site*/
+body{
+    font-family:Verdana;
+    /*Retirando bordas e margens dos cantos da pagina*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+#titulo{
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+} 
+
+/*Estilização do header da página*/
+header{
+    color: white;
+    background: #330852;
+}
+/*Estilização do logotipo*/
+.logo{
+    width: 30%;
+    margin-left: 300px;
+}
+/*Estilização do MENU*/
+nav{
+    right: 0;/*Zerar qualquer tipo de margem ou espaçamento a direita*/
+    margin-right: 150px;
+    position: absolute;
+    top: 225px;
+}
+nav li {
+    display: inline;/*na horizontal*/
+    margin: 0 0 0 15px;/*Espaçamento nos itens do menu*/
+}
+nav a{
+    text-transform:uppercase;/*Transforma todas letras em maiuscula*/
+    color: #FFFFFF;/*Cor de fonte*/
+    font-weight: bold;/*Negrito*/
+    font-size: 10;/*Tamanho que quero*/
+    text-decoration: none;/*Tirar subinhado*/
+}
+nav a:hover{
+    /* Quando passar o mouse em cima do link:*/
+    color:#C750CC;
+    text-decoration: underline;
+}
+.logo_caixa{
+    width: 600;
+    position: relative;
+    margin: auto;
+}
+/*Estilização do banner*/
+.banner{
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+/*EStilização da logo do texto*/
+.logo_texto{
+    width: 30%;
+    float: left;
+}
+/*EStilização titulo do texto sobre inkvibes*/
+.titulo_inkvibes{
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+}
+.area_texto{
+    width: 940px;
+    text-align: left;
+    margin: auto;
+    background-color: #FFFFFE;
+}
+p{
+    text-indent: 20px;
+}
+
+/*Estilização mapa*/
+#titulo_mapa{
+    font-size: 20px;
+    text-align: center;
+}
+.mapa{
+    text-align: center;
+    background:linear-gradient(#FFFFFE, #8852af);/*Degrade*/
+    padding: 4%;
+}
+
+/*Estilização da section Benefícios*/
+#titulo_beneficios{
+    font-size: 30px;
+    text-align: center;
+    padding: 2%;
+    margin: 0;
+}
+.beneficios{
+    background: linear-gradient(#8852af, #330852); 
+}
+.cont-beneficios{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.lista-beneficios{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    list-style: circle;
+    padding-left: 33%;/*afastar dentro dos parametros*/
+    margin-top: 30px;
+    
+}
+.img_beneficios{
+    right: 0;
+    width: 15%;
+    box-shadow:10px 10px 5px 0px black;/*Tamanho de sombra*/
+    opacity: 5;
+    transition: 400ms;
+
+}
+.img_beneficios:hover{
+    opacity: 0.5;
+}
+.itens:before{
+    content: "🎶";
+}
+.itens{
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+.video{
+    text-align: center;
+    background: linear-gradient(#330852, #2a0644);
+    margin: 0%;
+    padding: 4%;
+}
+/*Estilização do footer*/
+footer{
+    text-align: center;
+    background: url(assets/imagens/footer.jpg);
+    padding: 1%;
+}
+.copyright{
+    color: #FFFFFE;
+    font-size: 12px;
+    margin: 20px;
+    padding: 40px;
+    margin: 0;
+}
+.logo_footer{
+    width: 250px;
+}
+
+/*Estilização dos componentes da section da página Tatuadores*/
+
+.tatuagem_logo{
+    width: 100px;
+    margin: 10px;
+}
+
+.tatuagem{
+    font-family: Verdana;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+    padding: 2%;
+}
+.div_tattoo{
+    width: 90%;
+    border-width: 2px;
+    border-style: solid; 
+    border-color:  #330852;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 100px;
+    text-align: center;
+}
+#titulo-h3{
+    font-family: Verdana;
+    font-size: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 2%;
+}
+.estilo_tattoo{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    border-radius: 10px;
+    text-align: center;
+}
+.style_tattoo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.div_tattoo:hover{
+    transform: scale(1.05);
+    border-color: #8852af;
+}
+.info{
+    text-align: center;
+}
