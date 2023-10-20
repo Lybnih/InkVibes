@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="estilo.css" rel="stylesheet">
+    <link href="assets/imagens/Logo.ico.ico" rel="shortcut icon">
+    <title>Ink Vibes</title>
+</head>
+<body>
+<header>
+    <div class="logo_caixa">
+        <img src="assets/imagens/Logo3.png" title="Ink Vibes" class="logo"/>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="cadastro.html">Cadastro</a></li>
+                        <li><a href="tatuagem.html">Tatuagem</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div> 
+</header>
+<main>
+
+</main>
+<form name="frmContato" method="get" action="mailto:teste@gmail.com" target="_blank">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <br>
+        
+        <label for="nomesobrenome">* Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+        <label for="email">* E-mail</label>
+        <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="telefone">* Telefone</label>
+        <input type="tel" id="telefone" name="" class="input-padrao"  placeholder="(XX) XXXX-XXXXX" required>
+        <br><br>
+        <label for="mensagem">* Mensagem</label>
+        <br><br>
+        <textarea cols="50" rows="10" id="mensagem" class="input-padrao" style="resize: none;"></textarea>
+
+        <br>
+        <br>
+
+        <label for="contato">Como prefere nosso contato?
+            <input type="radio" value="radio-mail" name="Contato"> E-mail
+            <input type="radio" value="radio-telefone" name="Contato"> Telefone
+            <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+        </label>
+
+        <br><br>
+        <label for="horario">Qual o motivo do seu contato?
+            <select>
+            <option>Selecione</option>
+            <option>Dúvida</option>
+            <option>Sugestão</option>
+            <option>Elogio</option>
+            <option>Reclamação</option>
+        </select>
+        </label>
+    </fieldset>
+
+    <label><input type="checkbox" class="chk" > Receber novidades</label>
+
+    <input type="submit" value="Enviar Formulário" class="enviar">
+</form>
+<footer><img src="assets/imagens//footer.jpg" alt="InkVibes" class="logo_footer">
+    <p class="copyright"> &copy; Copyright - Todos os direitos reservados a Ink Vibes</p>
+</footer>
+</body>
+</html>

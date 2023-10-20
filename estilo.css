@@ -206,3 +206,75 @@ footer{
 .info{
     text-align: center;
 }
+.cadastro{
+    font-family: Verdana;
+    font-size: 25px;
+    text-align: left;
+    margin: 0;
+    padding: 2%;
+    
+
+}
+.cadastro2{
+    text-align: center;
+    padding: 2%;
+    margin: 0;
+}
+
+/*estlização do cadastro*/
+.estilo_dados{
+    vertical-align: top;
+    list-style: none;
+    text-align: center;
+}
+
+.insere_dados{
+    width: 50%;
+    border-width: 2px;
+    border-color:  #330852;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    list-style: circle;
+}
+
+.recebe_dados{
+    border-radius: 10px;
+    border-color:  #330852;
+    font-size: 16px;
+}
+
+.salvar{
+    margin: 50px;
+}
+
+/*Formulário de contato*/
+
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    border-color:  #330852;
+    border-radius: 10px;
+}
+.input-padrao{
+    border-radius: 10px;
+    border-color:  #330852;
+    font-size: 16px;
+}
+
+.chk{
+float: left;
+}
+
+.enviar{
+    float: right;
+    margin-right: 290px;
