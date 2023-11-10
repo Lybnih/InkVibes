@@ -3,7 +3,15 @@
 <head>
     <link href="estilo.css" rel="stylesheet">
     <link href="assets/imagens/Logo.ico.ico" rel="shortcut icon">
-    <title>Ink Vibes</title>
+    <title>Contato - Ink Vibes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script>
+        alert("Utilize esse formulário para se comunicar conosco!");
+
+        dia = new Array ("Domingo","Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+        mes = new Array ("Janeiro","Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        data = new Date
+    </script>
 </head>
 <body>
 <header>
@@ -20,9 +28,24 @@
     </div> 
 </header>
 <main>
+    <ul class="contato-titulo">
+        <li class="contato-item">CONTATO</li>
+    </ul>
+    <p style="text-align: right; margin-right: 10px;">
+        <script type="text/javascript">
+            document.write (dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear())
+        </script>   
+    </p>
 
-</main>
-<form name="frmContato" method="get" action="mailto:teste@gmail.com" target="_blank">
+    <div class="contato_paragrafo">
+        <p>Entre em contato pelo Whatsapp</p>
+        <a href="https://api.whatsapp.com/send?phone=11953598510" target="_blank">
+            <i class="fa fa-whatsapp"></i> 
+        </a>
+    </div>
+
+    <form name="frmContato" method="get" action="mailto:teste@gmail.com" target="_blank">
+
     <fieldset>
         <legend>Dados Pessoais</legend>
 
@@ -52,7 +75,7 @@
 
         <br><br>
         <label for="horario">Qual o motivo do seu contato?
-            <select>
+            <select class="option">
             <option>Selecione</option>
             <option>Dúvida</option>
             <option>Sugestão</option>
@@ -66,6 +89,7 @@
 
     <input type="submit" value="Enviar Formulário" class="enviar">
 </form>
+</main>
 <footer><img src="assets/imagens//footer.jpg" alt="InkVibes" class="logo_footer">
     <p class="copyright"> &copy; Copyright - Todos os direitos reservados a Ink Vibes</p>
 </footer>

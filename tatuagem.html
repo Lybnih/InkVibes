@@ -4,9 +4,19 @@
         <link href="estilo.css" rel="stylesheet">
         <link href="assets/imagens/Logo.ico.ico" rel="shortcut icon">
     
-        <title>Ink Vibes</title>
+        <title>Catálogo - Ink Vibes</title>
+        <script>
+            var win = null;
+            function promocao(){
+                pagina= "promocao.html"
+                var left = (window.innerWidth-400)/2;
+                var top = (window.innerHeight-400)/2;
+                settings = 'toolbar=bo, location=no, directory=no, status=no, width=400, heigth=400'
+                win = window.open(pagina, "OFERTA RELAMPAGO", settings);
+            }
+        </script>
     </head>
-<body>
+<body onload="Javascript:PopPromocao">
     <header>
             <div class="logo_caixa">
                 <img src="assets/imagens/Logo3.png" title="Ink Vibes" class="logo"/>

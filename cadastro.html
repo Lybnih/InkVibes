@@ -3,7 +3,7 @@
 <head>
     <link href="estilo.css" rel="stylesheet">
     <link href="assets/imagens/Logo.ico.ico" rel="shortcut icon">
-    <title>Ink Vibes</title>
+    <title>Cadastre-se - Ink Vibes</title>
 </head>
 <body>
 <header>
@@ -21,42 +21,39 @@
 </header>
 <main>
     <section>
-        <h1 class="cadastro">💜Junte-se a InkVibes</h1>
-        <p class="cadastro2">Cadastre-se com as informaçoes pedidas abaixo</p>
+        <h1 class="cadastro">💜 Junte-se a InkVibes</h1>
     </section>
     <section class="estilo_dados">
-        <form action="respostaForm" method="post">
-        <div class="insere_dados"> 
-            <label>NOME:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o seu nome..." id="Nome" name="Nome"/>
-        </div>
-        <div class="insere_dados"> 
-            <label>IDADE:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o sua idade..." id="Idade" name="Idade"/>
-        </div>
-        <div class="insere_dados"> 
-            <label>CPF:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o seu CPF..." id="CPF" name="CPF"/>
-        </div>
-        <div class="insere_dados"> 
-            <label>TELEFONE:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o seu telefone..." id="Telefone" name="Telefone"/>
-        </div>
-        <div class="insere_dados"> 
-            <label>EMAIL:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o seu Email..." id="Email" name="Email"/>
-        </div>
-        <div class="insere_dados"> 
-            <label>ENDEREÇO:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o seu endereço..." id="Endereço" name="Endereço"/>
-        </div>
-        <div class="insere_dados"> 
-            <label>SENHA:</label>
-            <input class="recebe_dados" type="text" placeholder="Digite o sua senha..." id="Senha" name="Senha"/>
-        </div>
-        <div class="salvar"> 
-            <input type="submit" value="Cadastrar">
-        </div>
+        <form name= "frmCadastro" action="respostaForm" method="post">
+        <fieldset>
+            <legend> Cadastre-se com as informaçoes pedidas abaixo </legend>
+        
+            <br>
+
+        <label for="nomesobrenome">* Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" name="" class="recebe_dados" required>
+
+        <label for="idade">* idade</label>
+        <input type="text" id="idade" name="" class="recebe_dados" required>
+        
+        <label for="cpf">* CPF</label>
+        <input type="text" id="cpf" name="" class="recebe_dados" required>
+
+        <label for="telefone">* Telefone</label>
+        <input type="tel" id="telefone" name="" class="recebe_dados"  placeholder="(XX) XXXX-XXXXX" required>
+
+        <label for="email">* E-mail</label>
+        <input type="email" id="email" name="" class="recebe_dados" required placeholder="seuemail@dominio.com">
+
+        <label for="endereco">* Endereço</label>
+        <input type="text" id="endereco" name="" class="recebe_dados">
+
+        <label for="senha">* Senha</label>
+        <input type="password" id="senha" name="" class="recebe_dados">
+        
+        <input type="submit" value="Enviar Formulário" class="salvar">
+        
+         </fieldset>
         </form>
     </section>
 </main>

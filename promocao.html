@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link href="estilo.css" rel="stylesheet">
+        <title>OFERTA RELAMPAGO</title>
+        <script>
+            function pisca(){
+                setInterval(function(){
+                    f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
+                }, 150);
+            }
+        </script>
+    </head>
+    <body onload="pisca();">
+        <div class="promocao">
+            <img src="assets/imagens/promocao.jfif" class="img_promocao">
+            <p class="txt_promocao">
+                PROMOÇÃO
+                Tatuagem por apenas 
+            </p>
+            <p class="preco_promocao" id="preco_promocao">R$ 150,00</p>
+        </div>
+    </body>
+</html>
