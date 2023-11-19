@@ -6,17 +6,25 @@
     
         <title>Catálogo - Ink Vibes</title>
         <script>
-            var win = null;
-            function promocao(){
-                pagina= "promocao.html"
-                var left = (window.innerWidth-400)/2;
-                var top = (window.innerHeight-400)/2;
-                settings = 'toolbar=bo, location=no, directory=no, status=no, width=400, heigth=400'
-                win = window.open(pagina, "OFERTA RELAMPAGO", settings);
-            }
+        var win = null;
+        function PopPromocao() {
+            var pagina = "promocao.html";
+            var left = (window.innerWidth - 400) / 2;
+            var top = (window.innerHeight - 400) / 2;
+            var settings = 'toolbar=bo, location=no, directories=no, status=no, menubar=no, width=400, height=400, left=' + left + ',top=' + top + ', scrollbars=no, resizable=no, copyhistory=yes';
+            win = window.open(pagina, "OFERTA RELAMPAGO", settings);
+        }
+
+        function novidade(){
+            var pagina = "novidade.html";
+            var left = (window.innerWidth - 820) / 2;
+            var top = (window.innerHeight - 680) / 2;
+            var settings = 'toolbar=bo, location=no, directories=no, status=no, menubar=no, width=400, height=400, left=' + left + ',top=' + top + ', scrollbars=no, resizable=no, copyhistory=yes';
+            win = window.open(pagina, "NOVIDADE", settings);
+        }
         </script>
     </head>
-<body onload="Javascript:PopPromocao">
+    <body onload="PopPromocao()">
     <header>
             <div class="logo_caixa">
                 <img src="assets/imagens/Logo3.png" title="Ink Vibes" class="logo"/>
@@ -25,7 +33,8 @@
                         <li><a href="index.html" target="_blank">Home</a></li>
                         <li><a href="cadastro.html">Cadastro</a></li>
                         <li><a href="tatuagem.html">Tatuagem</a></li>
-                        <li><a href="contato.html">Contato</a></li>          
+                        <li><a href="contato.html">Contato</a></li>
+                        <li><a href="login.html">Login</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,6 +65,7 @@
             </div>
         </section>
         <p class="info">*Os valores podem sofrer alteração dependendo do tamanho e do tatuador escolhido.</p>
+        <a href="JavaScript:novidade();"><img src="assets/imagens/novo.png" class="novo_fita"></a>
     </main>
     <footer><img src="assets/imagens//footer.jpg" alt="InkVibes" class="logo_footer">
         <p class="copyright"> &copy; Copyright - Todos os direitos reservados a Ink Vibes</p>

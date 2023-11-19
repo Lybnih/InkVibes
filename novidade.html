@@ -1,16 +1,26 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <link href="estilo.css" rel="stylesheet">
-        <title>NOVIDADE</title>
-        
-    </head>
-    <body>
-        <main>
-            <i>*Arrasta o slider para revelar a novidade...</i>
-            <div class="container">
-                <div class="effect"></div>
+<head>
+    <meta charset="UTF-8">
+    <link href="estilo.css" rel="stylesheet">
+    <title>NOVIDADE</title>
+</head>
+<body>
+    <main>
+        <i>*Arraste o slider para revelar a novidade...</i>
+        <div class="container">
+            <img src="assets/imagens/glitch.jpg" id="imagemNovidade">
+            <div class="effect" id="dv-effect"></div>
+            <div class="informacoes_novidade" id="informacoes_novidade">
+                <strong>Novo estilo de tatuagem</strong>
+                <br><br>
+                <i>Glitch</i>
+                <br><br>
+                É do seu estilo? Gostou?..... Agende seu Horário!
             </div>
+        </div>
+        <input type="range" min="0" max="100" value="0" id="range">
+        <script src="assets/script.js"></script>
     </main>
-    </body>
+</body>
 </html>

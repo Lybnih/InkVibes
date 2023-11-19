@@ -4,6 +4,7 @@
         <title>OFERTA RELAMPAGO</title>
         <script>
             function pisca(){
+                var f = document.getElementById('preco_promocao');
                 setInterval(function(){
                     f.style.visibility = (f.style.visibility == 'hidden' ? '' : 'hidden');
                 }, 150);

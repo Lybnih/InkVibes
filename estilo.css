@@ -21,14 +21,15 @@ header{
 /*Estilização do logotipo*/
 .logo{
     width: 30%;
-    margin-left: 300px;
+    margin-left: 20px;
 }
 /*Estilização do MENU*/
 nav{
     right: 0;/*Zerar qualquer tipo de margem ou espaçamento a direita*/
     margin-right: 150px;
     position: absolute;
-    top: 225px;
+    top: 100px;
+    
 }
 nav li {
     display: inline;/*na horizontal*/
@@ -47,7 +48,7 @@ nav a:hover{
     text-decoration: underline;
 }
 .logo_caixa{
-    width: 600;
+    width: 940px;
     position: relative;
     margin: auto;
 }
@@ -225,15 +226,32 @@ footer{
     margin-bottom: 20px;
 }
 
+.estilo_dados form fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%; /* Defina a largura desejada do fieldset */
+    margin-left: -50px;
+    padding: 20px; /* Adiciona um espaçamento interno ao fieldset */
+}
+
+.estilo_dados form fieldset label {
+    margin-bottom: 5px;
+}
+
 .recebe_dados{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
     border-radius: 10px;
     border-color:  #330852;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .salvar{
     float: right;
-    margin-right: 290px;
+    margin-right: 20px;
     border-bottom-color: #2a0644;
     background-color:#8852af;
     color: #FFFFFE;
@@ -341,4 +359,90 @@ a[href^="https://api.whatsapp.com"] {
 .preco_promocao{
     color:#8852af;
     font-size: 40px;
+}
+
+/* Estilo para a imagem inicialmente invisível */
+#imagemNovidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+}
+
+.informacoes_novidade {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+/*EStilização Login*/
+.login{
+    display: flex;
+    align-items: center;
+    height: 399;
+}
+
+.login-form {
+    border-radius: 10px;
+    border-color: #674285;
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 37%;
+    margin-bottom: 20px;
+    margin-bottom: 250px;
+    
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    color: #330852;
+}
+
+.login_field {
+    /*o quadrado do fieldset*/
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+    border-color: #330852;
+    border-radius: 10px;
+    padding: 10%;
+}
+
+.input-field {
+    /*recebe dados*/
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8852af;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #674285;
 }
